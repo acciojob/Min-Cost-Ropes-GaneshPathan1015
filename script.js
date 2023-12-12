@@ -3,9 +3,12 @@ function mincost(arr)
 //write your code here
 // return the min cost
 	function sort(arr){
-		arr.sort(a,b)=>return a-b;
+		arr.sort((a,b)=>{
+                return a-b;
+        })
 	}
 	let mincost=0,sum=0;
+	
 	while (arr.length>1) {
 		sort(arr);
 		let cutarr = arr.splice(0,2);
